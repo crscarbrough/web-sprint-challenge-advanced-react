@@ -87,10 +87,10 @@ The form is working, but it is currently controlled by local stateful logic. We 
 
 ### Testing the Checkout Form
 
-- [ ] Run the test runner and ensure that `src/components/CheckoutForm.test.js` is correctly called.
-- [ ] Fill out code necessary to test that that Checkout form renders without errors.
-- [ ] Fill out code necessary to test that when all form inputs are filled with valid data, a success message appears.
-- [ ] Make sure the tests are passing, and make sure you can cause the tests to fail purposefully, so that you know the tests are truly working.
+- [x] Run the test runner and ensure that `src/components/CheckoutForm.test.js` is correctly called.
+- [x] Fill out code necessary to test that that Checkout form renders without errors.
+- [x] Fill out code necessary to test that when all form inputs are filled with valid data, a success message appears.
+- [x] Make sure the tests are passing, and make sure you can cause the tests to fail purposefully, so that you know the tests are truly working.
 
 ## Important Notes:
 
@@ -124,8 +124,18 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What are the main differences between a class-based and a functional component?
 
+Functional components are stateless components that can only accept and return data to the DOM, class-based components are more dynamic and extend from the React Library, class-based components have access to all the different phases of the React lifecycle.
+
 2. When does a componentWillMount function be called? What about a componentDidUpdate?
+
+componentWillMount is called before the DOM is rendered, and only once. componentDidUpdate executes when the component is updated.
 
 3. Define stateful logic.
 
+It uses and can share state between multiple components
+
 4. What are the three step of creating a successful test? What is done in each phase?
+
+Arrange, Act, Assert.
+
+When you arrange, the component is in its original state, Act is when you do something like click a button or input text into a field, then Assert is what you expect the component to do after you change it. At that point your tests will either pass or fail and you can act accordingly from there.
